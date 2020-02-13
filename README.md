@@ -30,6 +30,6 @@ gcloud pubsub topics create demo
 
 ### Create custom pipeline from templates
 
-(Commands for custom pipeline template) [pubsubToBigquery-compile-run-commands.sh]
+[Commands for custom pipeline template] (pubsubToBigquery-compile-run-commands.sh)
 
 
