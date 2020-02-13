@@ -11,15 +11,18 @@
 [Login to the cloud shell and follow these instruction to create a vm](https://cloud.google.com/compute/docs/instances/create-start-instance#startinstancegcloud)
 
 ### Login to created vm
+```sh
 gcloud compute ssh lab-1
-
+```
 ### Login using user account for permission
+```sh
 gcloud auth login
-
+```
 ### Create pubsub topic
+```sh
 gcloud pubsub topics list
 gcloud pubsub topics create demo
-
+```
 ### Create a dataset in bigquery
 [Create a dataset in your project if not already available](https://cloud.google.com/bigquery/docs/datasets)
 
