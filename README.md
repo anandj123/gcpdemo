@@ -22,10 +22,13 @@ gcloud pubsub topics create demo
 
 ### Create a dataset in bigquery
 [Create a dataset in your project if not already available](https://cloud.google.com/bigquery/docs/datasets)
+
 ### Create a bigquery table to hold the streaming data
 [Create a table to hold the streaming data](https://cloud.google.com/bigquery/docs/tables)
+
 ### Create a GCS bucket for holding errors
 [Create a bucket to hold the errors](https://cloud.google.com/storage/docs/creating-buckets#storage-create-bucket-gsutil)
+
 ### Instanstiate dataflow pipeline for streaming insert
 [Create streaming pipeline](https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloud-storage-text-to-bigquery-stream)
 
