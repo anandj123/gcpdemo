@@ -30,8 +30,19 @@ gcloud pubsub topics create demo
 [Create a bucket to hold the errors](https://cloud.google.com/storage/docs/creating-buckets#storage-create-bucket-gsutil)
 
 ### Instanstiate dataflow pipeline for streaming insert
-[Create streaming pipeline](https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloud-storage-text-to-bigquery-stream)
+[Create streaming pipeline for BQ export and GCS export](https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloud-storage-text-to-bigquery-stream)
 
+## Analyzing syslog messages in Bigquery
+```sql
+select 
+  SUBSTRING(data,0,15) as date, 
+  --substring(data,16,length(data)) rest, 
+  FIRST(split(substring(data,16,length(data)), " ")) as machine, 
+  RTRIM(NTH(2, split(substring(data,16,length(data)), " ")), ":") as process, 
+  substring(substring(data,16,length(data)), INSTR(substring(data,16,length(data)), ":") + 1, length(substring(data,16,length(data))) ) as message, 
+  * 
+from Anand_BQ_Test_1.demo_gcs
+```
 ### Create custom pipeline from templates
 
 [Commands for custom pipeline template](./pubsubToBigquery-compile-run-commands.sh)
