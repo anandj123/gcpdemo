@@ -26,7 +26,7 @@ mvn compile exec:java \
 
 JOB_NAME=pubsub-to-bigquery-$USER-`date +"%Y%m%d-%H%M%S%z"`
 
- gcloud dataflow jobs run ${JOB_NAME} \
+gcloud dataflow jobs run ${JOB_NAME} \
   --gcs-location=${PIPELINE_FOLDER}/template \
   --zone=us-east1-d \
   --parameters \
