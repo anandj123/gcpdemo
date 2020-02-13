@@ -1,10 +1,17 @@
-export GOOGLE_APPLICATION_CREDENTIALS=/mnt/chromeos/MyFiles/Downloads/anand-bq-test-2-4cda899168a4.json 
-
+# Setup variables for commands
 PROJECT_ID=anand-bq-test-2
 BUCKET_NAME=anand-bq-test-2
 PIPELINE_FOLDER=gs://${BUCKET_NAME}/dataflow/pipelines/pubsub-to-bigquery
 USE_SUBSCRIPTION=false
 RUNNER=DataflowRunner
+JOB_NAME=pubsub-to-bigquery-$USER-`date +"%Y%m%d-%H%M%S%z"`
+
+# Copy the function to GCS location
+gsutil cp test.js gs://${PROJECT_ID}/dataflow/functions/test.js
+
+# Use Service Account json for deployment
+export GOOGLE_APPLICATION_CREDENTIALS=/mnt/chromeos/MyFiles/Downloads/anand-bq-test-2-4cda899168a4.json 
+
 
 mvn compile exec:java \
 -Dexec.mainClass=com.google.cloud.teleport.templates.PubSubToBigQuery \
