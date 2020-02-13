@@ -1,7 +1,6 @@
 <HTML>
 <script src="test2.js"></script>
 <BODY>
-	
 	  <label>Syslog:</label>
 	  <input type="text" id="syslog" name="fname">
 	  <button onclick="callTransform()">Transform</button>
@@ -9,14 +8,14 @@
 	<label id="output"/>
 </BODY>
 <script>
-	function callTransform(){
-		var output = transform(document.getElementById("syslog").value);
-		document.getElementById("output").innerHTML = "Date : " + output.date 
-							+ "<br /> System : " + output.system
-							+ "<br /> Application : " + output.application
-							+ "<br /> Message : " + output.message;
-		return;	
-	}
+function callTransform(){
+	var output = transform(document.getElementById("syslog").value);
+	document.getElementById("output").innerHTML = "Date : " + output.date 
+						+ "<br /> System : " + output.system
+						+ "<br /> Application : " + output.application
+						+ "<br /> Message : " + output.message;
+	return;	
+}
 </script>
 
 </HTML>
