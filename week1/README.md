@@ -36,11 +36,9 @@ gcloud pubsub topics create demo
 ```sql
 select 
   SUBSTRING(data,0,15) as date, 
-  --substring(data,16,length(data)) rest, 
   FIRST(split(substring(data,16,length(data)), " ")) as machine, 
   RTRIM(NTH(2, split(substring(data,16,length(data)), " ")), ":") as process, 
-  substring(substring(data,16,length(data)), INSTR(substring(data,16,length(data)), ":") + 1, length(substring(data,16,length(data))) ) as message, 
-  * 
+  substring(substring(data,16,length(data)), INSTR(substring(data,16,length(data)), ":") + 1, length(substring(data,16,length(data))) ) as message
 from Anand_BQ_Test_1.demo_gcs
 ```
 ### Create custom pipeline from templates
