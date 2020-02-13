@@ -28,6 +28,8 @@ gcloud pubsub topics create demo
 
 ### instanstiate dataflow pipeline for streaming insert
 
+### Create custom pipeline from templates
 
+(Commands for custom pipeline template) [pubsubToBigquery-compile-run-commands.sh]
 
 
