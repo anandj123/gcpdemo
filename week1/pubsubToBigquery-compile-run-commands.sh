@@ -1,3 +1,6 @@
+# Clone Dataflow templates
+git clone https://github.com/GoogleCloudPlatform/DataflowTemplates.git
+
 # Setup variables for commands
 PROJECT_ID=anand-bq-test-2
 BUCKET_NAME=anand-bq-test-2
