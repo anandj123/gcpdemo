@@ -48,4 +48,6 @@ from Anand_BQ_Test_1.demo_gcs
 
 [Commands for custom pipeline template](./pubsubToBigquery-compile-run-commands.sh)
 
+### Dataflow use private IP
 
+### Dataflow worker region setting
