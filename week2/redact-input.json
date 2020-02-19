@@ -1,0 +1,36 @@
+{
+    "item":{
+      "value":"My name is Alicia Abernathy, and my email address is aabernathy@example.com."
+    },
+    "deidentifyConfig":{
+      "infoTypeTransformations":{
+        "transformations":[
+          {
+            "infoTypes":[
+              {
+                "name":"EMAIL_ADDRESS"
+              }
+            ],
+            "primitiveTransformation":{
+              "characterMaskConfig":{
+                "maskingCharacter":"#",
+                "reverseOrder":false,
+                "charactersToIgnore":[
+                  {
+                    "charactersToSkip":".@"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "inspectConfig":{
+      "infoTypes":[
+        {
+          "name":"EMAIL_ADDRESS"
+        }
+      ]
+    }
+  }
