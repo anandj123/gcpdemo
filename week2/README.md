@@ -84,28 +84,4 @@ curl -s -H 'Content-Type: application/json' \
 
 
 ```
-
-```json
-{
-  "item": {
-     "value":"My email is test@example.com",
-   },
-   "deidentifyConfig": {
-     "infoTypeTransformations":{
-          "transformations": [
-            {
-              "primitiveTransformation": {
-                "replaceWithInfoTypeConfig": {}
-              }
-            }
-          ]
-        }
-    },
-    "inspectConfig": {
-      "infoTypes": {
-        "name": "EMAIL_ADDRESS"
-      }
-    }
-}
-
-```    
+   
