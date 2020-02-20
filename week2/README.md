@@ -36,25 +36,26 @@ gcloud kms keys versions list --location global \
 ```
 
 ### Service account setup for Dataflow for reading from pubsub and writing to Bigquery
+[Security and permissions for Dataflow service account] (https://cloud.google.com/dataflow/docs/concepts/security-and-permissions)
 
 ### Configuring message encryption pubsub CMEK setup
-
 [Configuring message encryption for pubsub](https://cloud.google.com/pubsub/docs/encryption)
 
 ```sh
 gcloud pubsub topics describe demo
 
 ```
-
 ### Pubsub restricting resource locations
 [Configuring resource location for pubsub](https://cloud.google.com/pubsub/docs/resource-location-restriction)
 
 ### GCS CMEK setup
-
+[Using Encryption Keys in Google Cloud Storage](https://cloud.google.com/storage/docs/gsutil/addlhelp/UsingEncryptionKeys)
 
 ### Bigquery CMEK setup
+[Bigquery customer managed encryption keys](https://cloud.google.com/bigquery/docs/customer-managed-encryption)
 
 ### Bigquery client project setup for accessing central dataset repository
+[Excellent writeup by Allen] (https://medium.com/@ajarvis_18979/bigquery-cost-separation-across-business-units-97e6f87505d2)
 
 ### Bigquery authorized views setup (row and column level access control)
 
