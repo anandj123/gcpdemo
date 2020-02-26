@@ -11,6 +11,11 @@ def read_file(filename):
     storage_client = storage.Client()
 
     bucket = storage_client.get_bucket('anand-bq-test-2')
+
+    for blob in bucket.list_blobs(prefix='dataflow/functions/'):
+        print(str(blob))
+
+
     blob = storage.Blob('dataflow/functions/test.js', bucket)
     with open('./test.js', 'w') as file_obj:
         file_obj.write(blob.download_as_string())
