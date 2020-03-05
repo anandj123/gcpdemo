@@ -16,6 +16,21 @@ https://cloud.google.com/bigquery/docs/views
 ### Create an authorized view of data provisioning.
 https://cloud.google.com/bigquery/docs/authorized-views
 
+### Creating partitioned tables
+https://cloud.google.com/bigquery/docs/partitioned-tables
+
+### Creating clustered tables
+https://cloud.google.com/bigquery/docs/clustered-tables
+
+### Bigquery cost optimization
+https://cloud.google.com/bigquery/docs/best-practices-costs
+
+### Bigquery BI Engine
+https://cloud.google.com/bi-engine/docs/getting-started-data-studio
+
+### Bigquery reservation API
+https://cloud.google.com/bigquery/docs/reservations-workload-management
+
 ### Overview of the Bigquery monitoring and logging tools.
 https://cloud.google.com/bigquery/docs/monitoring
 
