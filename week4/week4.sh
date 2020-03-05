@@ -1,0 +1,1 @@
+bq mkdef --autodetect --source_format="CSV" "gs://anand-bq-test-2/bigquery/data/natality/*" > external_table.json

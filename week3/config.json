@@ -9,7 +9,7 @@
     "user_config" : {
         "pubsub_topic":"demo4",
         "bq_schema_file":"create_table.sql",
-        "job_name":"test_job2",
+        "job_name":"test_job3",
         "udf_file_name":"test.js",
         "bq_table_name":"anand-bq-test-2:Anand_BQ_Test_1.demo_pubsub"
     }

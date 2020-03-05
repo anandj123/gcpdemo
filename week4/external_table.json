@@ -1,0 +1,15 @@
+{
+    "autodetect": true,
+    "csvOptions": {
+      "allowJaggedRows": false,
+      "allowQuotedNewlines": false,
+      "encoding": "UTF-8",
+      "fieldDelimiter": ",",
+      "quote": "\"",
+      "skipLeadingRows": 0
+    },
+    "sourceFormat": "CSV",
+    "sourceUris": [
+      "gs://anand-bq-test-2/bigquery/data/natality/*"
+    ]
+}
