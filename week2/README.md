@@ -81,7 +81,38 @@ curl -s -H 'Content-Type: application/json' \
   'https://dlp.googleapis.com/v2/infoTypes'
 
 curl -s -H "Authorization: Bearer ya29.c.KpQBvwcb6jHyS3V5l8K2Idmu48H99ztTE_bkhvls5uSmkjVgN0TteMoRlDwIy6LK85G6iZwgiz0pxtNVqIaoy_4MlMjS-iMSJDAQ5UL6SqLbxit-c5rK1ndQK0jQoiXpFQrTrRg-b6XF4ZmCSjd7zk6oNn7PE6uIVrEgY7cMykKchl7vwyjkrhSt_C58G0n3obPR9Y4orw" -H "Content-Type: application/json" https://dlp.googleapis.com/v2/projects/$PROJECT_ID/content:deidentify -d @redact-input.json
-
-
 ```
-   
+ ### Export Aggregated stackdriver logs to bigquery  
+
+[Stackdriver aggregated log export to Bigquery](https://github.com/glickbot/professional-services/blob/org-wide-log-export/examples/org-wide-log-export/README.md)
+
+ After the exports are running (at project level, folder level or organization level) you could query those tables.
+
+```sh
+SELECT 
+      resource.labels.project_id,
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.totalBilledBytes,
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.totalSlotMs,
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.totalProcessedBytes, 
+      protopayload_auditlog.authenticationInfo.principalEmail,
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.createTime, 
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.startTime,
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatistics.endTime,
+      a.timestamp, 
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobStatus.state , 
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobName.jobId,  
+      protopayload_auditlog.servicedata_v1_bigquery.jobGetQueryResultsResponse.job.jobConfiguration.query.query
+FROM `<project_id>:<dataset_id>.cloudaudit_googleapis_com_data_access_*` a
+```
+
+[Bigquery org wide running jobs tool](https://github.com/meganzhao/professional-services/tree/org-wide-bq-job-top/examples/bigquery-org-wide-running-jobs)
+
+### GCP Monitoring 
+
+[Using metrics explorer](https://cloud.google.com/monitoring/charts/metrics-explorer)
+
+[Using dashboards and charts](https://cloud.google.com/monitoring/dashboards)
+
+[Using alerting policies](https://cloud.google.com/monitoring/alerts)
+
+
