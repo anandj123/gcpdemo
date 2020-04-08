@@ -19,9 +19,9 @@ do
 
   # split file by end query toke (;) into separate files
   # so that they can be run one after another
-  csplit -k * '/\;/' {1} > /dev/null ;
+  #csplit -k * '/\;/' {1} > /dev/null ;
 
-  FILES=xx* ;
+  FILES=* ;
 
   for g in $FILES ;
   do
