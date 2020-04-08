@@ -35,9 +35,8 @@ gcloud composer environments run composer1 --location=us-east1 variables -- --se
 gcloud composer environments describe composer1 --location=us-east1
 
 gsutil ls gs://us-east1-composer1-dec892c4-bucket/dags
+
 gsutil cp bqml_demo.py gs://us-east1-composer1-dec892c4-bucket/dags
-
-
 
 ```
 ### Integrating Bigquery jobs with enterprise schedulers 
