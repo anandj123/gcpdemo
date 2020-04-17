@@ -39,7 +39,7 @@ bq mk --transfer_run  --start_time='2020-04-06T00:00:00.000000Z'  --end_time='20
 ```
 
 ### Notes on configuring composer
-
+ 
 [Setting up Cloud composer](https://cloud.google.com/composer/docs/how-to/managing/creating#configuring_sendgrid_email_services)
 
 ``` sh
@@ -68,3 +68,17 @@ To run all the query files uploaded to a bucket use the following shell script:
 
 ```
 
+### Running a jupyter notebook CLI
+
+Install gcloud-notebook-training: https://pypi.org/project/gcloud-notebook-training/
+
+Project home: https://github.com/gclouduniverse/notebook_training
+
+For running a job:
+```sh
+gcloud container images list --repository gcr.io/deeplearning-platform-release
+
+python /usr/local/bin/gcloud-notebook-training --input-notebook ~/Downloads/VisualizingBigQuerypublicdata.ipynb --container-uri gcr.io/deeplearning-platform-release/tf-gpu.1-15:m43
+
+
+```
