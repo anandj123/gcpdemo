@@ -79,6 +79,5 @@ For running a job:
 gcloud container images list --repository gcr.io/deeplearning-platform-release
 
 python /usr/local/bin/gcloud-notebook-training --input-notebook ~/Downloads/VisualizingBigQuerypublicdata.ipynb --container-uri gcr.io/deeplearning-platform-release/tf-gpu.1-15:m43
-
-
 ```
+
