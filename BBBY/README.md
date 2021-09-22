@@ -10,7 +10,7 @@ bq mkdef --autodetect --source_format="CSV" "gs://anand-bq-test-2/data/bbby-data
 bq mkdef --autodetect --source_format="CSV" "gs://anand-bq-test-2/data/bbby-data/items.txt" > items.json
 bq mkdef --autodetect --source_format="CSV" "gs://anand-bq-test-2/data/bbby-data/ord_dtl.txt" > ord_dtl.json
 bq mkdef --autodetect --source_format="CSV" "gs://anand-bq-test-2/data/bbby-data/ord_hdr.txt" > ord_hdr.json
-
+ 
 
 # Edit the definition to add other configurations like "skipLeadingRows": 1
 # Run the following command to create the external table
