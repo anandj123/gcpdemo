@@ -2,7 +2,7 @@
 
 ## GCP demo for Bigquery ELT pipeline for nested and repeated fields 
 
-###For ingestion layer design upload the files to GCS (gzip) and create external tables
+#### For ingestion layer design upload the files to GCS (gzip) and create external tables
 * gzip txt files to upload to GCS
 * gunzip txt files to upload to GCS
 * upload files to GCS
