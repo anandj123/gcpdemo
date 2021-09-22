@@ -1,0 +1,89 @@
+{
+  "creationTime": "1632180795483",
+  "etag": "DC2bk9ir+6GZ7i0ZkqJeEA==",
+  "id": "anand-bq-test-2:bbby_data.orders",
+  "kind": "bigquery#table",
+  "lastModifiedTime": "1632183372091",
+  "location": "US",
+  "numBytes": "789",
+  "numLongTermBytes": "0",
+  "numRows": "4",
+  "schema": {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "ord_id",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ord_date",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cust_id",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ord_tot",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cust_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "zip",
+        "type": "INTEGER"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "ord_id",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "det_id",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "item_id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "qty",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "item_desc",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cost",
+            "type": "FLOAT"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "dtl",
+        "type": "RECORD"
+      }
+    ]
+  },
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/anand-bq-test-2/datasets/bbby_data/tables/orders",
+  "tableReference": {
+    "datasetId": "bbby_data",
+    "projectId": "anand-bq-test-2",
+    "tableId": "orders"
+  },
+  "type": "TABLE"
+}

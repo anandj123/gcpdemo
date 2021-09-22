@@ -1,0 +1,12 @@
+{
+  "autodetect": true,
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "quote": "\"",
+    "skipLeadingRows": 1
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "gs://anand-bq-test-2/data/bbby-data/items.txt"
+  ]
+}
