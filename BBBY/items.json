@@ -7,6 +7,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://anand-bq-test-2/data/bbby-data/items.txt"
+    "gs://anand-bq-test-2/data/bbby-data/items.txt.gz"
   ]
 }

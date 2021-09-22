@@ -1,7 +1,0 @@
-cust_id,cust_name,zip
-101,john,10234
-102,harley,20890
-103,kate,40789
-104,cathy,67587
-105,scott,42351
-106,adam,11245

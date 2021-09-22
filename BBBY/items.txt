@@ -1,6 +1,0 @@
-item_id,item_desc,cost
-i1,pillow,10.04
-i2,bedsheet,30.45
-i3,curtain,23.54
-i4,comforter,145.23
-i5,teapot,32.54
