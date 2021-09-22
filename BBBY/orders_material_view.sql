@@ -1,4 +1,4 @@
-create materialized view bbby_views.orders_material_view as
+CREATE MATERIALIZED VIEW  bbby_views.orders_material_view AS
 
 SELECT 
     o.ord_id,
@@ -12,5 +12,5 @@ SELECT
     flat_dtl.item_desc,
     flat_dtl.cost
 FROM `anand-bq-test-2.bbby_data.orders` o 
-cross join unnest(dtl) as flat_dtl
+CROSS JOIN UNNEST(dtl) as flat_dtl
 

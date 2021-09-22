@@ -1,2 +1,2 @@
-create view bbby_views.orders_auth_view as
-select * from bbby_data.orders
+CREATE VIEW bbby_views.orders_auth_view AS
+SELECT * FROM bbby_data.orders

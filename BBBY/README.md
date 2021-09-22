@@ -5,11 +5,16 @@
 ### Nested and Repeated field demo
 
 For ingestion layer design upload the files to GCS (gzip) and create external tables
+* gzip txt files to upload to GCS
+* gunzip txt files to upload to GCS
+* upload files to GCS
+* create definition json for external tables (could be automated to generate those)
+* edit definition files to take care of header rows
+* create external tables
+
 ``` sh
-# gzip txt files to upload to GCS
 gzip *.txt
 
-# gunzip txt files to upload to GCS
 gunzip *.txt.gz
 
 #upload gzip files to gcs
@@ -91,6 +96,8 @@ gsutil ls gs://us-east1-test1-1027d9be-bucket/dags
 
 # Test DAG got deployed to Cloud Composer
 gcloud composer environments list --locations=us-east1
+
+# List all DAGS that are deployed in the specied environment
 gcloud composer environments storage dags list --environment=projects/anand-bq-test-2/locations/us-east1/environments/test1
 
 # Testing purposes truncate the orders table to see if the table is getting populated by the stored proc.
@@ -112,6 +119,8 @@ bq rm -f -t anand-bq-test-2:bbby_data.items
 bq rm -f -t anand-bq-test-2:bbby_data.ord_hdr
 bq rm -f -t anand-bq-test-2:bbby_data.ord_dtl
 bq rm -f -t anand-bq-test-2:bbby_data.orders
+bq rm -f -t anand-bq-test-2:bbby_views.orders_auth_view
+bq rm -f -t anand-bq-test-2:bbby_views.orders_material_view
 gsutil rm gs://us-east1-test1-1027d9be-bucket/dags/start_merge_orders_job.py
 
 ```

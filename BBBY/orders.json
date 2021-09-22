@@ -7,7 +7,7 @@
       {
         "mode": "NULLABLE",
         "name": "ord_date",
-        "type": "STRING"
+        "type": "DATE"
       },
       {
         "mode": "NULLABLE",
