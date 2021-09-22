@@ -1,10 +1,8 @@
 # Google cloud platform demo of data pipelines
 
-## GCP demo for Bigquery ELT pipeline
+## GCP demo for Bigquery ELT pipeline for nested and repeated fields 
 
-### Nested and Repeated field demo
-
-For ingestion layer design upload the files to GCS (gzip) and create external tables
+###For ingestion layer design upload the files to GCS (gzip) and create external tables
 * gzip txt files to upload to GCS
 * gunzip txt files to upload to GCS
 * upload files to GCS
@@ -49,7 +47,7 @@ bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.bbby_data.ord_hdr`'
 
 ``` 
 
-For creating ELT pipeline 
+### For creating ELT pipeline 
 * Create the table with nested and repeated field 
 * Execute the script that creates the stored procedure
 
@@ -66,14 +64,14 @@ bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.bbby_data.orders`'
 
 ```
 
-Create authorized views to query the data
+### Create authorized views to query the data
 ```sh
 bq query --nouse_legacy_sql < orders_auth_view.sql
 
 bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.bbby_views.orders_auth_view`'
 ```
 
-Create materialized view for analytics layer
+### Create materialized view for analytics layer
 
 ```sh
 bq query --nouse_legacy_sql < orders_material_view.sql
@@ -84,7 +82,7 @@ bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.bbby_views.orders_ma
 https://cloud.google.com/bigquery/docs/share-access-views#python
 ```
 
-Deploy a DAG to trigger the ELT pipeline PopulateOrdersOperationLayer through Cloud Composer
+### Deploy a DAG to trigger the ELT pipeline PopulateOrdersOperationLayer through Cloud Composer
 
 ```sh
 
@@ -110,7 +108,7 @@ gcloud composer environments run projects/anand-bq-test-2/locations/us-east1/env
 bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.bbby_data.orders`'
 ```
 
-Clean up if need to run again
+### Clean up if need to run again
 
 ```sh
 
