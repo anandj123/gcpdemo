@@ -1,0 +1,32 @@
+{
+    "files.associations": {
+        "*.java": "java",
+        "iostream": "cpp",
+        "cassert": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "map": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "valarray": "cpp",
+        "any": "cpp",
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp",
+        "ratio": "cpp",
+        "streambuf": "cpp",
+        "type_traits": "cpp",
+        "variant": "cpp"
+    }
+}

@@ -1,0 +1,102 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+#include<numeric>
+#include<set>
+#include<assert.h>
+#include<queue>
+#include<stack>
+#include<unordered_set>
+
+using namespace std;
+
+#define sim template < class c
+#define ris return * this
+#define dor > debug & operator <<
+#define eni(x) sim > typename \
+  enable_if<sizeof dud<c>(0) x 1, debug&>::type operator<<(c i) {
+sim > struct rge { c b, e; };
+sim > rge<c> range(c i, c j) { return rge<c>{i, j}; }
+sim > auto dud(c* x) -> decltype(cerr << *x, 0);
+sim > char dud(...);
+struct debug {
+#ifdef LOCAL
+~debug() { cerr << endl; }
+eni(!=) cerr << boolalpha << i; ris; }
+eni(==) ris << range(begin(i), end(i)); }
+sim, class b dor(pair < b, c > d) {
+  ris << "(" << d.first << ", " << d.second << ")";
+}
+sim dor(rge<c> d) {
+  *this << "[";
+  for (auto it = d.b; it != d.e; ++it)
+    *this << ", " + 2 * (it == d.b) << *it;
+  ris << "]";
+}
+#else
+sim dor(const c&) { ris; }
+#endif
+};
+#define imie(...) " [" << #__VA_ARGS__ ": " << (__VA_ARGS__) << "] "
+
+#define REP(i,a,b) for(int i=a; i<b;++i)
+#define endl "\n"
+#define F first
+#define S second
+#define MP make_pair 
+#define PB push_back
+#define all(a) a.begin(),a.end()
+
+typedef vector<int> vi;
+typedef long long ll;
+typedef vector< vector<int> > vvi;
+int INF = 1e9;
+
+void calculate(int n, int c0, int c1, int h, string s) {
+
+    /*
+        c0   c1   h
+        1    2    3
+        2    1    3
+        3    2    1
+    */
+    int countz = count(all(s),'0'), counto = count(all(s),'1');
+    int ans = countz * c0 + counto * c1;
+    // debug() << imie(s) imie(countz) imie(counto);
+    int l = s.length();
+    if(c0 == c1) {
+        ans = l * c0;
+    }
+    
+    // debug() << imie(ans);
+
+    if(c0<c1) {
+        if(c1<h){
+            ans = min(ans,  (l * c0 + counto * c1));
+        } else {
+            ans =  min(ans, (l * c0 + counto * h ));
+        }
+    } else {
+        if(c0<h){
+            ans = min(ans,(countz * c0 + l * c1) );
+        } else {
+            ans = min(ans,(countz * h + l * c1) );
+        }
+    }
+    cout << ans << endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int T;
+    cin >> T;
+    while(T--){
+        int n, c0, c1, h;
+        cin >> n >> c0 >> c1 >> h;
+        string s;
+        cin >> s;
+        calculate(n,c0,c1,h,s);
+    }
+}
