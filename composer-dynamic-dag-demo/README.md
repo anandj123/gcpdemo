@@ -1,14 +1,16 @@
-# Overview
+# Dynamic Tasks (generation and scheduling)  in Google Cloud Composer 
+
+## Overview
 Demonstration of how to use Airflow to scan a GCS bucket for shell scripts and run them in parallel using Cloud Composer. 
 
 This is mostly motivated by requirement for implementation of the batch ETL/ELT pipeline as shell scripts (e.g bash etc.) and schedule them dynamically by copying them into a GCS location and using a composer environment and a predefined composer DAG that can dynamically pick up these shell scripts and run them in parallel. 
 
-# Files
+## Files
 [Main Composer DAG file](./gcs_loop_dag.py)
 
 The following file is the main DAG routine that scans the directory for .sh files and run them in parallel.
 
-# Prerequisites:
+## Prerequisites:
 
 1. A running Cloud Composer instance to run the DAG.
 2. Copy of the [Main Composer DAG file](./gcs_loop_dag.py) to the "DAG folder" that is found in the "Environment Configuration" section of the Comoser instance detail page.
@@ -33,7 +35,7 @@ gs://us-east1-2003938zhe-bucket
 
 The DAG code scans this directory for any files with ```.sh``` extension.
 
-# What are the challenges with this implementation vs writing native airflow DAGs
+## What are the challenges with this implementation vs writing native airflow DAGs
 
 The following challenges need to be addressed in the batch scripts.
 
@@ -47,7 +49,7 @@ The following challenges need to be addressed in the batch scripts.
 
 5. Any IAM permission issues outside of Composer run time they have to take care of in the batch scripts.
 
-# Conclusion
+## Conclusion
 
 The above DAG is an example of how we can use the dynamic task generation feature of the Airflow framework to generate and schedule dynamic number of tasks based on list of files in a particular GCS location. This is a powerful feature that can be leveraged for other things as well.
 
