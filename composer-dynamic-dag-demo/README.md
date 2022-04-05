@@ -17,14 +17,16 @@ The following file is the main DAG routine that scans the directory for .sh file
 gs://us-east1-2003938zhe-bucket
 
 ```
->-- dags
-    >-- dag1.py
-    >-- dag2.py
->-- data
-    >-- run1.sh
-    >-- run2.sh
->-- logs
->-- plugins
+
+|-- dags
+    |-- dag1.py
+    |-- dag2.py
+|-- data
+    |-- run1.sh
+    |-- run2.sh
+|-- logs
+|-- plugins
+
 ```
 
 
