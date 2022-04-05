@@ -10,8 +10,8 @@ The following file is the main DAG routine that scans the directory for .sh file
 
 # Prerequisites:
 
-1. Need a running Cloud Composer instance to run the DAG.
-2. Copy the "DAG folder" from "Environment Configuration" section of the Comoser instance detail page.
+1. A running Cloud Composer instance to run the DAG.
+2. Copy of the [Main Composer DAG file](./gcs_loop_dag.py) to the "DAG folder" that is found in the "Environment Configuration" section of the Comoser instance detail page.
 3. Create a folder under the main bucket of the dag folder. So the folder in the bucket looks like the following:
 
 gs://us-east1-2003938zhe-bucket
@@ -29,8 +29,9 @@ gs://us-east1-2003938zhe-bucket
 
 ```
 
+4. The ```/data``` folder maps to ```/home/airflow/gcs/data/``` within the DAG environment. 
 
-the /data folder maps to /home/airflow/gcs/data/ within the DAG environment. The loop dag code scans this directory for any files with .sh extension.
+The DAG code scans this directory for any files with ```.sh``` extension.
 
 # What are the challenges with this implementation vs writing native airflow DAGs
 
@@ -45,4 +46,8 @@ The following challenges need to be addressed in the batch scripts.
 4. Retry and recover logic they have to take care within the script (e.g. exponential backoff algorithms when a step fails and want to retry N number of times etc.)
 
 5. Any IAM permission issues outside of Composer run time they have to take care of in the batch scripts.
+
+# Conclusion
+
+The above DAG is an example of how we can use the dynamic task generation feature of the Airflow framework to generate and schedule dynamic number of tasks based on list of files in a particular GCS location. This is a powerful feature that can be leveraged for other things as well.
 
