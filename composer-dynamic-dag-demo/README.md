@@ -16,7 +16,8 @@ The following file is the main DAG routine that scans the directory for .sh file
 
 gs://us-east1-2003938zhe-bucket
 
-| >-- dags
+```
+>-- dags
     >-- dag1.py
     >-- dag2.py
 >-- data
@@ -24,6 +25,7 @@ gs://us-east1-2003938zhe-bucket
     >-- run2.sh
 >-- logs
 >-- plugins
+```
 
 
 the /data folder maps to /home/airflow/gcs/data/ within the DAG environment. The loop dag code scans this directory for any files with .sh extension.
