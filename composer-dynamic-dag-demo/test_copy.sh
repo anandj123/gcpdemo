@@ -1,0 +1,1 @@
+echo2 "This is testing shell script"
