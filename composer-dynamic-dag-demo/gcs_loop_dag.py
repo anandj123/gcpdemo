@@ -11,7 +11,7 @@ import json
 import os
 from datetime import datetime, timedelta
 
-with DAG(dag_id='dynamic_dag_generation', schedule_interval=None, start_date=datetime(2022, 1, 1), catchup=False) as dag:
+with DAG(dag_id='dynamic_dag_generation', schedule_interval='*/5 * * * *', start_date=datetime(2022, 1, 1), catchup=False) as dag:
 
     d1 = DummyOperator(task_id='kick_off_dynamic_dag')
 

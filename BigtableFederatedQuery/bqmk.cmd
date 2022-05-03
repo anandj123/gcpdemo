@@ -1,0 +1,1 @@
+bq mk --external_table_definition=tabledef.json hca_bt_test.bt1

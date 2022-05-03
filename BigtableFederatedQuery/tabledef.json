@@ -1,0 +1,15 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/anand-bq-test-2/instances/test-1/tables/HCA_TEST"
+    ],
+    "bigtableOptions": {
+        "columnFamilies" : [
+            {
+                "familyId": "cf1",
+                "type": "STRING",
+                "encoding": "BINARY"
+            }
+        ]
+    }
+}
