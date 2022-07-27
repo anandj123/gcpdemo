@@ -190,7 +190,7 @@ gsutil ls gs://$BUCKET_NAME/samples/
     ```
 1. Reference documents:
 
-
+   --|--
    [Apache Beam]| https://beam.apache.org/
    [Google Cloud Pub/Sub]| https://cloud.google.com/pubsub/docs/
    [Google Cloud Dataflow]| https://cloud.google.com/dataflow/docs/
