@@ -1,6 +1,7 @@
 # IDE related files
 *.DS_store
 *.vscode
+*/.vscode/*
 
 # Local .terraform directories
 **/.terraform/*
