@@ -14,6 +14,8 @@
 
 
 '''
+Run the following command to deploy the code to GCP dataflow
+-----------------------------------------------------------
 
 python3 PubSubToBigQuery.py \
 --project=$PROJECT_ID \
@@ -25,6 +27,19 @@ python3 PubSubToBigQuery.py \
 --runner=DataflowRunner \
 --window_size=1 \
 --temp_location=$BUCKET_ID/temp
+
+Test messages
+------------------
+ADT:SEGMENTS&MSH:201601190838:HL7CDMADT:COCQA1A,0001|COCQA1A|MT_COCQA1A_ADT_QA1AGTADM.1.229576.567|J000423598|J500217|J00021004053||^~\&||MT_COCQA1A|||COCQA1A|||DBM||||||||201601190838||ADT|A02|||D|||2.1||||||||||||||||||||||||||||||||||||||||||||||||KYA||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||HL7CDMADT    
+ADT:SEGMENTS&EVN:201601190838:HL7CDMADT:COCQA1A,0002|COCQA1A|MT_COCQA1A_ADT_QA1AGTADM.1.229576.567|J000423598|J500217|J00021004053||A02|201601190838||||||||||||||||||||||||||1TSQBE8554||HAMMOCK|||||BRITTANY||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||HL7CDMADT
+MSH|^~\&|MT_COCQA1A|COCQA1A|DBM||201601190838||ADT^A02|MT_COCQA1A_ADT_QA1AGTADM.1.229576.567|D|2.1||KYA
+EVN|A02|201601190838|||1TSQBE8554^HAMMOCK^BRITTANY^JACK^WARREN^^
+
+
+Create tables
+-------------------
+bq mk --table anand-bq-test-2:hca_test.hl7pubsub bq_hl7pubsub_schema.json
+bq mk --table anand-bq-test-2:hca_test.hl7pubsub_dlq bq_hl7pubsub_dlq_schema.json
 
 
 '''
@@ -115,16 +130,28 @@ class WriteBatchesToBigQuery(beam.DoFn):
 
     def process(self, batch, window=beam.DoFn.WindowParam):
         client = bigquery.Client(project=self.bigquery_project)
-        table_ref = client.dataset(self.output_dataset).table(self.output_table)
-        table = client.get_table(table_ref)
-        client = client
-        table = table
+        
+        table = client.get_table( \
+            client.dataset(self.output_dataset).table(self.output_table))
+        table_dlq = client.get_table( \
+            client.dataset(self.output_dataset).table(self.output_table + "_dlq"))
+        
         rows_to_insert = []
+        rows_to_insert_dlq = []
+
         for element in batch:
-            rows_to_insert.append(json.loads(json.dumps(record(element))))
+            try:
+                rows_to_insert.append(json.loads(json.dumps(record(element))))
+            except:
+                rows_to_insert_dlq.append(element)
 
-        client.insert_rows_json(table, rows_to_insert)
-
+        if len(rows_to_insert) > 0:
+            client.insert_rows_json(table, rows_to_insert)
+        
+        
+        if len(rows_to_insert_dlq) > 0:
+            client.insert_rows_json(table_dlq, rows_to_insert_dlq)
+        
 def run(input_topic, bigquery_project,output_dataset,output_table, \
     window_size=1.0, pipeline_args=None):
     # `save_main_session` is set to true because some DoFn's rely on
