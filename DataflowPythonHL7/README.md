@@ -190,24 +190,22 @@ gsutil ls gs://$BUCKET_NAME/samples/
     ```
 1. Reference documents:
 
-   |--|--
-   [Apache Beam]| https://beam.apache.org/ 
-   [Google Cloud Pub/Sub]| https://cloud.google.com/pubsub/docs/
-   [Google Cloud Dataflow]| https://cloud.google.com/dataflow/docs/
-   [Google Cloud Scheduler]| https://cloud.google.com/scheduler/docs/
-   [App Engine]| https://cloud.google.com/appengine/docs/
-
-   [Cloud SDK]| https://cloud.google.com/sdk/docs/
-   [Cloud Shell]| https://console.cloud.google.com/cloudshell/editor/
-   [*New Project* page]| https://console.cloud.google.com/projectcreate
-   [Enable billing]| https://cloud.google.com/billing/docs/how-to/modify-project/
-   [*Create service account key* page]| https://console.cloud.google.com/apis/credentials/serviceaccountkey/
-   [GCP Console IAM page]| https://console.cloud.google.com/iam-admin/iam/
-   [Granting roles to service accounts]| https://cloud.google.com/iam/docs/granting-roles-to-service-accounts/
-   [Creating and managing service accounts]| https://cloud.google.com/iam/docs/creating-managing-service-accounts/
-
-   [Install Python and virtualenv]| https://cloud.google.com/python/setup/
-
-   [GCP Console create Dataflow job page]| https://console.cloud.google.com/dataflow/createjob/
-   [GCP Console Dataflow page]| https://console.cloud.google.com/dataflow/
-   [GCP Console Storage page]| https://console.cloud.google.com/storage/
+   |Reference|Documentation site|
+   |------|-------|
+   |[Apache Beam]| https://beam.apache.org/ |
+   |[Google Cloud Pub/Sub]| https://cloud.google.com/pubsub/docs/ |
+   |[Google Cloud Dataflow]| https://cloud.google.com/dataflow/docs/ |
+   |[Google Cloud Scheduler]| https://cloud.google.com/scheduler/docs/ |
+   |[App Engine]| https://cloud.google.com/appengine/docs/ |
+   |[Cloud SDK]| https://cloud.google.com/sdk/docs/ |
+   |[Cloud Shell]| https://console.cloud.google.com/cloudshell/editor/ |
+   |[*New Project* page]| https://console.cloud.google.com/projectcreate |
+   |[Enable billing]| https://cloud.google.com/billing/docs/how-to/modify-project/ |
+   |[*Create service account key* page]| https://console.cloud.google.com/apis/credentials/serviceaccountkey/ |
+   |[GCP Console IAM page]| https://console.cloud.google.com/iam-admin/iam/ |
+   |[Granting roles to service accounts]| https://cloud.google.com/iam/docs/granting-roles-to-service-accounts/ |
+   |[Creating and managing service accounts]| https://cloud.google.com/iam/docs/creating-managing-service-accounts/ |
+   |[Install Python and virtualenv]| https://cloud.google.com/python/setup/ |
+   |[GCP Console create Dataflow job page]| https://console.cloud.google.com/dataflow/createjob/ |
+   |[GCP Console Dataflow page]| https://console.cloud.google.com/dataflow/ |
+   |[GCP Console Storage page]| https://console.cloud.google.com/storage/ |
