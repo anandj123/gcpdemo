@@ -3,125 +3,41 @@
 Please refer to [original documentation](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/pubsub/streaming-analytics) for installation and configuration.
 
 ## Overview
-
-1. Install the [Cloud SDK].
-   > *Note:* This is not required in
-   > [Cloud Shell]
-   > since it already has the Cloud SDK pre-installed.
-
-1. Create a new Google Cloud project via the
-   [*New Project* page],
-   or via the `gcloud` command line tool.
-
-   ```sh
-   export PROJECT_NAME=your-google-cloud-project-id
-   gcloud projects create $PROJECT_NAME
-   ```
-
-1. [Enable billing].
-
-1. Setup the Cloud SDK to your GCP project.
-
-   ```sh
-   gcloud init
-   ```
-
-1. [Enable the APIs](https://console.cloud.google.com/flows/enableapi?apiid=dataflow,compute_component,logging,storage_component,storage_api,pubsub,cloudresourcemanager.googleapis.com,cloudscheduler.googleapis.com,appengine.googleapis.com): Dataflow, Compute Engine, Stackdriver Logging, Cloud Storage, Cloud Storage JSON, Pub/Sub, Cloud Scheduler, Cloud Resource Manager, and App Engine.
-
-1. Create a service account JSON key via the
-   [*Create service account key* page],
-   or via the `gcloud` command line tool.
-   Here is how to do it through the *Create service account key* page.
-
-   * From the **Service account** list, select **New service account**.
-   * In the **Service account name** field, enter a name.
-   * From the **Role** list, select **Project > Owner** **(*)**.
-   * Click **Create**. A JSON file that contains your key downloads to your computer.
-
-   Alternatively, you can use `gcloud` through the command line.
-
-   ```sh
-   export PROJECT_NAME=$(gcloud config get-value project)
-   export SA_NAME=samples
-   export IAM_ACCOUNT=$SA_NAME@$PROJECT_NAME.iam.gserviceaccount.com
-
-   # Create the service account.
-   gcloud iam service-accounts create $SA_NAME --display-name $SA_NAME
-
-   # Set the role to Project Owner (*).
-   gcloud projects add-iam-policy-binding $PROJECT_NAME \
-     --member serviceAccount:$IAM_ACCOUNT \
-     --role roles/owner
-
-   # Create a JSON file with the service account credentials.
-   gcloud iam service-accounts keys create path/to/your/credentials.json \
-     --iam-account=$IAM_ACCOUNT
-   ```
-
-   > **(*)** *Note:* The **Role** field authorizes your service account to access resources.
-   > You can view and change this field later by using the
-   > [GCP Console IAM page].
-   > If you are developing a production app, specify more granular permissions than **Project > Owner**.
-   > For more information, see
-   > [Granting roles to service accounts].
-
-   For more information, see
-   [Creating and managing service accounts].
-
-1. Set your `GOOGLE_APPLICATION_CREDENTIALS` environment variable to point to your service account key file.
-
-   ```sh
-   export GOOGLE_APPLICATION_CREDENTIALS=path/to/your/credentials.json
-   ```
-
-1. Create a Cloud Storage bucket.
-
-   ```bash
-   export BUCKET_NAME=your-gcs-bucket
-
-   gsutil mb gs://$BUCKET_NAME
-   ```
-
- 1. Start a [Google Cloud Scheduler] job that publishes one message to a [Google Cloud Pub/Sub] topic every minute. This will create an [App Engine] app if one has never been created on the project.
-
-    ```bash
-    # Create a Pub/Sub topic.
-    gcloud pubsub topics create cron-topic
-
-    # Create a Cloud Scheduler job
-    gcloud scheduler jobs create pubsub publisher-job --schedule="* * * * *" \
-      --topic=cron-topic --message-body="Hello!"
-
-    # Run the job.
-    gcloud scheduler jobs run publisher-job
-    ```
+The following python dataflow pipeline [PubSubToBigquery.py](https://github.com/anandj123/gcpdemo/blob/master/DataflowPythonHL7/PubSubToBigQuery.py) is for demonstrating how a complex python object can be stored in BigQuery using[ Nested and Repeated fields](https://cloud.google.com/bigquery/docs/nested-repeated).
 
 ## Setup
+1. Get the code from the current Github repo.
 
-The following instructions will help you prepare your development environment.
+   ```sh
+   git clone https://github.com/anandj123/gcpdemo.git
+   ```
 
-1. [Install Python and virtualenv].
+1. Setup environment variables for the following commands
+   ```sh
+   gcloud auth application-default login
 
-1. Clone the `python-docs-samples` repository.
+   export PROJECT_ID=$(gcloud config get-value project)
+   export TOPIC_ID=projects/anand-bq-test-2/topics/hl7
+   export BUCKET_ID=gs://anand-bq-test-2/HCA_TEST/HL7  
+   export DATASET_ID=hca_test
+   export TABLE_ID=hl7pubsub
+   ```
 
-    ```bash
-    git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
-    ```
+1. Install the [Nested and Repeated target tables].
+
+   ```sh
+   bq mk --table $PROJECT_ID:$DATASET_ID.$TABLE_ID bq_hl7pubsub_schema.json
+   bq mk --table $PROJECT_ID:$DATASET_ID.${TABLE_ID}_dlq bq_hl7pubsub_dlq_schema.json
+   ```
+
+1. Create a topic as defined in $TOPIC_ID
+   
 
 1. Navigate to the sample code directory.
 
    ```bash
    cd python-docs-samples/pubsub/streaming-analytics
    ```
-
-1. Create a virtual environment and activate it.
-
-  ```bash
-  virtualenv env
-  source env/bin/activate
-  ```
-  > Once you are finished with the tutorial, you can deactivate the virtualenv and go back to your global Python environment by running `deactivate`.
-
 1. Install the sample requirements.
 
   ```bash
