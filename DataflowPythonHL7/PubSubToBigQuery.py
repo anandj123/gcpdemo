@@ -19,11 +19,11 @@ Run the following command to deploy the code to GCP dataflow
 
 python3 PubSubToBigQuery.py \
 --project=$PROJECT_ID \
---bigquery_project=$PROJECT_ID \
+--bigquery_project=$BIGQUERY_PROJECT_ID \
 --region=us-central1 \
 --input_topic=$TOPIC_ID \
---output_dataset=hca_test \
---output_table=hl7pubsub \
+--output_dataset=$DATASET_ID \
+--output_table=$TABLE_ID \
 --runner=DataflowRunner \
 --window_size=1 \
 --temp_location=$BUCKET_ID/temp
