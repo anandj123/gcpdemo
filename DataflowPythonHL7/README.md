@@ -17,7 +17,7 @@ is for demonstrating how a complex python object can be stored in BigQuery using
 1. Navigate to the sample code directory.
 
    ```bash
-   cd python-docs-samples/pubsub/streaming-analytics
+   cd gcpdemo/DataflowPythonHL7 
    ```
 1. Install the sample requirements.
 
@@ -87,21 +87,17 @@ You can also check the output to your BigQuery console.
 
    gcloud pubsub topics publish projects/anand-bq-test-2/topics/hl7 --message="EVN|A02|201601190838|||1TSQBE8554^HAMMOCK^BRITTANY^JACK^WARREN^^"
 
-#Test to see if the bigquery has the data:
-bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.hca_test.hl7pubsub`'
+   #Test to see if the bigquery has the data:
+   bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.hca_test.hl7pubsub`'
 
-#Invalid test case
-gcloud pubsub topics publish projects/anand-bq-test-2/topics/hl7 --message="EVN"
+   #Invalid test case
+   gcloud pubsub topics publish projects/anand-bq-test-2/topics/hl7 --message="EVN"
 
-#Test to see if the bigquery DLQ (dead-letter queue) has the data:
-bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.hca_test.hl7pubsub_dlq`'
+   #Test to see if the bigquery DLQ (dead-letter queue) has the data:
+   bq query --nouse_legacy_sql 'select * from `anand-bq-test-2.hca_test.hl7pubsub_dlq`'
 
    ```
 
-
-```bash
-gsutil ls gs://$BUCKET_NAME/samples/
-```
 
 ## Cleanup
 
