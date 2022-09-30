@@ -145,6 +145,8 @@ class WriteBatchesToBigQuery(beam.DoFn):
             except:
                 rows_to_insert_dlq.append(element)
 
+
+
         if len(rows_to_insert) > 0:
             client.insert_rows_json(table, rows_to_insert)
         
