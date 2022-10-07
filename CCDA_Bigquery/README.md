@@ -3,15 +3,29 @@ This is WIP project that uses blue-button module to ingest CCDA files into BigQu
 
 # Setup instructions
 1. Clone this repo for the running this sample from your local computer
-- git clone https://github.com/anandj123/gcpdemo.git
+
+```sh
+git clone https://github.com/anandj123/gcpdemo.git
+```
+
 2. Change directory to CCDA_Bigquery to run this sample
-- cd CCDA_Bigquery
+```sh
+cd CCDA_Bigquery
+```
+
 3. Install python3 (if you don't have python3 already installed)
-1. Install latest version of node.js
-2. Install latest version of google-cloud-storage
-    - python3 -m pip install google-cloud-storage
-3. Install blue-button
-    - npm i bluebutton
+
+4. Install latest version of node.js
+
+5. Install latest version of google-cloud-storage
+```sh
+python3 -m pip install google-cloud-storage
+```
+
+6. Install blue-button
+```sh
+npm i bluebutton
+```
 
 # Google Cloud setup
 Get the authentication token to run this sample for your GCP project
