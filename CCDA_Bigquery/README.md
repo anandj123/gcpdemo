@@ -2,6 +2,11 @@
 This is WIP project that uses blue-button module to ingest CCDA files into BigQuery.
 
 # Setup instructions
+1. Clone this repo for the running this sample from your local computer
+- git clone https://github.com/anandj123/gcpdemo.git
+2. Change directory to CCDA_Bigquery to run this sample
+- cd CCDA_Bigquery
+3. Install python3 (if you don't have python3 already installed)
 1. Install latest version of node.js
 2. Install latest version of google-cloud-storage
     - python3 -m pip install google-cloud-storage
@@ -9,6 +14,12 @@ This is WIP project that uses blue-button module to ingest CCDA files into BigQu
     - npm i bluebutton
 
 # Google Cloud setup
+Get the authentication token to run this sample for your GCP project
+
+```sh
+gcloud auth application-default login
+
+```
 Create a GCS folder and copy your example CCDA file to that folder.
 A sample [CCDA sample is found at](./CCDA_QA_Procedures_Sample.xml)
 
