@@ -11,17 +11,17 @@ from google.cloud import storage
 project_id = 'anand-bq-test-2'
 data_set_id = 'hca_clinical'
 table_id = 'hca_ccda_sample_table'
-
-
+bucket_name = 'anand-bq-test-2'
+folder_name = 'HCA_TEST/Clinical/HCA/'
 # Initialise a client
 storage_client = storage.Client(project_id)
 
 # Create a bucket object for our bucket and download CCDA documents 
 # for processing.
-bucket = storage_client.get_bucket("anand-bq-test-2")
+bucket = storage_client.get_bucket(bucket_name)
 delimiter = None
 all_blobs = bucket.list_blobs(
-    prefix="HCA_TEST/Clinical/HCA/", delimiter=delimiter)
+    prefix=folder_name, delimiter=delimiter)
 
 # Note: The call returns a response only when the iterator is consumed.
 
