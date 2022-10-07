@@ -20,6 +20,7 @@ cd CCDA_Bigquery
 5. Install latest version of google-cloud-storage
 ```sh
 python3 -m pip install google-cloud-storage
+python3 -m pip install google-cloud-bigquery
 ```
 
 6. Install blue-button
@@ -32,7 +33,7 @@ Get the authentication token to run this sample for your GCP project
 
 ```sh
 gcloud auth application-default login
-
+gcloud config set project anand-bq-test-2
 ```
 Create a GCS folder and copy your example CCDA file to that folder.
 A sample [CCDA sample is found at](./CCDA_QA_Procedures_Sample.xml)
