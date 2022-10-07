@@ -2,13 +2,7 @@ var fs = require('fs');
 var BlueButton = require('bluebutton');
 
 var xml = fs.readFileSync('./current.xml', 'utf-8');
-//var xml = fs.readFileSync('./hl7_expected_ccda.xml', 'utf-8');
-//var xml = fs.readFileSync('./CCD_1.xml', 'utf-8');
-
 var ccda = BlueButton(xml);
-
-
-//console.log(ccda.type.json());
 console.log(ccda.data.json());
 
 // Available document sections
@@ -27,4 +21,3 @@ console.log(ccda.data.json());
 // console.log(ccda.data.procedures.json());
 // console.log(ccda.data.smoking_status.json());
 //console.log(ccda.data.vitals.json());
-

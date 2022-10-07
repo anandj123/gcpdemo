@@ -1,0 +1,658 @@
+{
+  "creationTime": "1664206559609",
+  "etag": "tu3WmRh/dg/M6/MUtP+jqg==",
+  "id": "anand-bq-test-2:hca_clinical.clinical_3",
+  "kind": "bigquery#table",
+  "lastModifiedTime": "1665167883027",
+  "location": "US",
+  "numActiveLogicalBytes": "19290",
+  "numActivePhysicalBytes": "6516",
+  "numBytes": "19290",
+  "numLongTermBytes": "0",
+  "numLongTermLogicalBytes": "0",
+  "numLongTermPhysicalBytes": "0",
+  "numRows": "3",
+  "numTimeTravelPhysicalBytes": "0",
+  "numTotalLogicalBytes": "19290",
+  "numTotalPhysicalBytes": "6516",
+  "schema": {
+    "fields": [
+      {
+        "mode": "REPEATED",
+        "name": "vitals",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "code",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "code_system_name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "code_system",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "date",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "smoking_status",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "code_system",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "code",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "device",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "phone",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "city",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "country",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "zip",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "state",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "organization",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "street",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "performer",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "code",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "date",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "code_system",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "code",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "specimen",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "code_system",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "procedures",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "problems",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "results",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "instructions",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "immunizations",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "medications",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "care_plan",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "functional_statuses",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "city",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "country",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "zip",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "street",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "address",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "phone",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "organization",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "provider",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "home",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "phone",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "city",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "country",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "zip",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "street",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "address",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "relationship_code",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "relationship",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "family",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "given",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "guardian",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "country",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "zip",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "state",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "birthplace",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "email",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "religion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "race",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "marital_status",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "language",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "family",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "given",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "prefix",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "city",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "country",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "zip",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "state",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "street",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "address",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ethnicity",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "work",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mobile",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "home",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "phone",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "gender",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "dob",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "demographics",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "REPEATED",
+            "name": "documentation_of",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "work",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "phone",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "city",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "country",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "zip",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "street",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "address",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "family",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "given",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "prefix",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "author",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "city",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "country",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "zip",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "street",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "address",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "encounter_date",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "location",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "title",
+            "type": "STRING"
+          },
+          {
+            "description": "bq-datetime",
+            "mode": "NULLABLE",
+            "name": "date",
+            "type": "TIMESTAMP"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "document",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "immunization_declines",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "encounters",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "allergies",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "text",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "chief_complaint",
+        "type": "RECORD"
+      }
+    ]
+  },
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/anand-bq-test-2/datasets/hca_clinical/tables/clinical_3",
+  "tableReference": {
+    "datasetId": "hca_clinical",
+    "projectId": "anand-bq-test-2",
+    "tableId": "clinical_3"
+  },
+  "type": "TABLE"
+}
