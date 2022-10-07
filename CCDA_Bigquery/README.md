@@ -10,7 +10,7 @@ This is WIP project that uses blue-button module to ingest CCDA files into BigQu
 
 # Google Cloud setup
 Create a GCS folder and copy your example CCDA file to that folder.
-A sample [CCDA sample is found at](CCDA_QA_PROCEDURES_SAMPLE.xml)
+A sample [CCDA sample is found at](./CCDA_QA_PROCEDURES_SAMPLE.xml)
 
 Upload the above sample to the corrosponding GCS folder.
 
