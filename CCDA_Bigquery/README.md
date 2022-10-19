@@ -10,7 +10,7 @@ git clone https://github.com/anandj123/gcpdemo.git
 
 2. Change directory to CCDA_Bigquery to run this sample
 ```sh
-cd CCDA_Bigquery
+cd gcpdemo/CCDA_Bigquery
 ```
 
 3. Install python3 (if you don't have python3 already installed)
