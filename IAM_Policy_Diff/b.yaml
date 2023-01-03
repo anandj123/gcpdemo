@@ -1,0 +1,1389 @@
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-automl.iam.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/export_data_THD_POC_2022_10_11T07_58_11_831Z
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-automl.iam.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/export_data_Fedex_Demo_2022_10_11T07_58_11_868Z
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataproc-temp-us-east1-701417641712-tbkkulya
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataproc-staging-us-east1-701417641712-la0lsbr5
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/hca_sqlserver
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/df-5608172352161614706-cvmzyajylai63n5oaizbbqaaaa
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/hca_clinical
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/hca_bt_test
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us-central1-test-2-0-ac5657d2-bucket
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/hca_test
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/test_analytics_hub
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-dataproc
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataproc-temp-us-central1-701417641712-jrbsobdr
+---
+assetType: cloudfunctions.googleapis.com/CloudFunction
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - allUsers
+    role: roles/cloudfunctions.invoker
+project: projects/701417641712
+resource: //cloudfunctions.googleapis.com/projects/anand-bq-test-2/locations/us-central1/functions/hello_get
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/pso_data_validator
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataprep-staging-1f8471b2-0c77-4bff-81c2-3923996011ed
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/cpb200_lab_data
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/bbby_views
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/bbby_data
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/bqml_tutorial
+---
+assetType: pubsub.googleapis.com/Topic
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gs-project-accounts.iam.gserviceaccount.com
+    role: roles/pubsub.publisher
+project: projects/701417641712
+resource: //pubsub.googleapis.com/projects/anand-bq-test-2/topics/testdedupe-topic-2
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-testdedupe2
+---
+assetType: pubsub.googleapis.com/Topic
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gs-project-accounts.iam.gserviceaccount.com
+    role: roles/pubsub.publisher
+project: projects/701417641712
+resource: //pubsub.googleapis.com/projects/anand-bq-test-2/topics/dedupe-topic
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-testdedupe
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataflow-staging-us-central1-701417641712
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/cc_default
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-aiplatform.iam.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/dataset_6455716551789117440_tables_2021_03_02T11_08_17_862Z
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-aiplatform.iam.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/dataset_713627026891735040_tables_2021_03_02T10_39_50_063Z
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-central1
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/cloud-ai-platform-b6068d42-412e-49ea-aac1-1c88cc0f7b18
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/artifacts.anand-bq-test-2.appspot.com
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/ml_datasets
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectEditor:df5d05eb184eaeb28p-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:13795834444@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectEditor:df5d05eb184eaeb28p-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:13795834444@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us-east1-test1-1027d9be-bucket
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2_cloudbuild
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/test_copy
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectEditor:vf09c1fd788028c5bp-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:706962367818@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectEditor:vf09c1fd788028c5bp-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:706962367818@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us-east1-test-cb2dba24-bucket
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/traceexport
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/gcf-sources-701417641712-us-central1
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/fedex
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-notebook-training
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - serviceAccount:service-701417641712@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/your_new_dataset
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectEditor:e2b568087497b757cp-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:687784392623@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectEditor:e2b568087497b757cp-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:687784392623@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us-east1-composer1-dec892c4-bucket
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/bqml_tutorials
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+  - members:
+    - allUsers
+    role: roles/storage.objectViewer
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-text
+---
+assetType: pubsub.googleapis.com/Topic
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:p701417641712-341816@gcp-sa-logging.iam.gserviceaccount.com
+    role: roles/pubsub.publisher
+project: projects/701417641712
+resource: //pubsub.googleapis.com/projects/anand-bq-test-2/topics/datacatalog-sink-topic
+---
+assetType: pubsub.googleapis.com/Topic
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:p701417641712-490046@gcp-sa-logging.iam.gserviceaccount.com
+    role: roles/pubsub.publisher
+project: projects/701417641712
+resource: //pubsub.googleapis.com/projects/anand-bq-test-2/topics/datacatlogdemo
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/bigquery.dataViewer
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/Anand_BQ_Test_Views
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2-2
+---
+assetType: cloudkms.googleapis.com/CryptoKey
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gs-project-accounts.iam.gserviceaccount.com
+    role: roles/cloudkms.cryptoKeyEncrypterDecrypter
+project: projects/701417641712
+resource: //cloudkms.googleapis.com/projects/anand-bq-test-2/locations/global/keyRings/demo-keyring2/cryptoKeys/demo-key2
+---
+assetType: bigquery.googleapis.com/Table
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - user:demart@google.com
+    - user:skluger@google.com
+    role: roles/bigquery.admin
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/Anand_BQ_Test_1/tables/dlp_scan_result_2
+---
+assetType: cloudkms.googleapis.com/CryptoKey
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-pubsub.iam.gserviceaccount.com
+    role: roles/cloudkms.cryptoKeyEncrypterDecrypter
+project: projects/701417641712
+resource: //cloudkms.googleapis.com/projects/anand-bq-test-2/locations/global/keyRings/demo-keyring/cryptoKeys/demo-key1
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataflow-staging-us-east1-701417641712
+---
+assetType: pubsub.googleapis.com/Topic
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - user:jain.12@gmail.com
+    role: roles/pubsub.viewer
+project: projects/701417641712
+resource: //pubsub.googleapis.com/projects/anand-bq-test-2/topics/bq-top-topic
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - user:agravat@google.com
+    role: roles/dataflow.worker
+  - members:
+    - user:agravat@google.com
+    role: roles/storage.admin
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:548552332917-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:548552332917-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyObjectReader
+  - members:
+    - serviceAccount:548552332917-compute@developer.gserviceaccount.com
+    role: roles/storage.objectViewer
+project: projects/701417641712
+resource: //storage.googleapis.com/thd-bucket-10172019
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:p701417641712-300289@gcp-sa-logging.iam.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectEditor:n03d9d75fbe18cd39-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:946385319077@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyBucketReader
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyObjectOwner
+  - members:
+    - projectEditor:n03d9d75fbe18cd39-tp
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:946385319077@cloudbuild.gserviceaccount.com
+    role: roles/storage.legacyObjectReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us-east1-test-helloworld-a6b9cf64-bucket
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/dataproc-6c6d7bfe-3626-4f93-a00a-966f541fb784-us
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - user:ajarvis@google.com
+    - user:demart@google.com
+    - user:skluger@google.com
+    role: roles/bigquery.admin
+  - members:
+    - projectEditor:anand-bq-test-2
+    - serviceAccount:bq-667@ivory-amphora-288703.iam.gserviceaccount.com
+    - serviceAccount:service-701417641712@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+    role: roles/bigquery.dataEditor
+  - members:
+    - projectOwner:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    - serviceAccount:bq-667@ivory-amphora-288703.iam.gserviceaccount.com
+    role: roles/bigquery.dataViewer
+  - members:
+    - serviceAccount:bq-667@ivory-amphora-288703.iam.gserviceaccount.com
+    role: roles/bigquery.user
+  - members:
+    - user:ajarvis@google.com
+    - user:demart@google.com
+    - user:skluger@google.com
+    role: roles/editor
+  - members:
+    - user:demart@google.com
+    - user:skluger@google.com
+    role: roles/owner
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/Anand_BQ_Test_1
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/us.artifacts.anand-bq-test-2.appspot.com
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/staging.anand-bq-test-2.appspot.com
+---
+assetType: storage.googleapis.com/Bucket
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - projectOwner:anand-bq-test-2
+    role: roles/storage.legacyBucketOwner
+  - members:
+    - projectViewer:anand-bq-test-2
+    role: roles/storage.legacyBucketReader
+project: projects/701417641712
+resource: //storage.googleapis.com/anand-bq-test-2.appspot.com
+---
+assetType: iam.googleapis.com/ServiceAccount
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-datafusion.iam.gserviceaccount.com
+    role: roles/iam.serviceAccountUser
+  - members:
+    - serviceAccount:anand-bq-test-2.svc.id.goog[composer-2-0-8-airflow-2-2-3-ac5657d2/default]
+    - serviceAccount:anand-bq-test-2.svc.id.goog[composer-system/custom-metrics-stackdriver-adapter]
+    - serviceAccount:anand-bq-test-2.svc.id.goog[composer-system/default]
+    - serviceAccount:anand-bq-test-2.svc.id.goog[composer-system/privileged]
+    role: roles/iam.workloadIdentityUser
+project: projects/701417641712
+resource: //iam.googleapis.com/projects/anand-bq-test-2/serviceAccounts/701417641712-compute@developer.gserviceaccount.com
+---
+assetType: bigquery.googleapis.com/Dataset
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - projectEditor:anand-bq-test-2
+    - user:anandjain@google.com
+    role: roles/bigquery.dataOwner
+project: projects/701417641712
+resource: //bigquery.googleapis.com/projects/anand-bq-test-2/datasets/BQ_Aggregated_Export
+---
+assetType: cloudresourcemanager.googleapis.com/Project
+folders:
+- folders/1002694244729
+organization: organizations/739076213843
+policy:
+  bindings:
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-aiplatform-cc.iam.gserviceaccount.com
+    role: roles/aiplatform.customCodeServiceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-aiplatform.iam.gserviceaccount.com
+    role: roles/aiplatform.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-anthosconfigmanagement.iam.gserviceaccount.com
+    role: roles/anthosconfigmanagement.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-gae-service.iam.gserviceaccount.com
+    role: roles/appengine.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-artifactregistry.iam.gserviceaccount.com
+    role: roles/artifactregistry.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-automl.iam.gserviceaccount.com
+    role: roles/automl.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-cloudbatch.iam.gserviceaccount.com
+    role: roles/batch.serviceAgent
+  - members:
+    - serviceAccount:701417641712@cloudservices.gserviceaccount.com
+    - serviceAccount:cloud-datafusion-management-sa@n92826e5a5cc85ba6-tp.iam.gserviceaccount.com
+    - serviceAccount:o739076213843-909886@gcp-sa-logging.iam.gserviceaccount.com
+    - user:aaronwilkowitz@google.com
+    - user:jhurring@google.com
+    - user:jjaladi@google.com
+    - user:lukemc@google.com
+    - user:saabhyankar@google.com
+    role: roles/bigquery.admin
+  - members:
+    - serviceAccount:export-000000a34fbfd6f0-3447@gcp-sa-cloud-trace.iam.gserviceaccount.com
+    role: roles/bigquery.dataEditor
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    - user:jain.12@gmail.com
+    role: roles/bigquery.dataViewer
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    role: roles/bigquery.jobUser
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-bigqueryconnection.iam.gserviceaccount.com
+    role: roles/bigqueryconnection.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+    role: roles/bigquerydatatransfer.serviceAgent
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    role: roles/browser
+  - members:
+    - serviceAccount:701417641712@cloudbuild.gserviceaccount.com
+    role: roles/cloudbuild.builds.builder
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-cloudbuild.iam.gserviceaccount.com
+    role: roles/cloudbuild.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcf-admin-robot.iam.gserviceaccount.com
+    role: roles/cloudfunctions.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-cloudscheduler.iam.gserviceaccount.com
+    role: roles/cloudscheduler.serviceAgent
+  - members:
+    - user:anandjain@google.com
+    role: roles/cloudsql.admin
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-cloudtasks.iam.gserviceaccount.com
+    role: roles/cloudtasks.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@cloudcomposer-accounts.iam.gserviceaccount.com
+    role: roles/composer.ServiceAgentV2Ext
+  - members:
+    - serviceAccount:service-701417641712@cloudcomposer-accounts.iam.gserviceaccount.com
+    role: roles/composer.serviceAgent
+  - members:
+    - serviceAccount:cloud-datafusion-management-sa@n92826e5a5cc85ba6-tp.iam.gserviceaccount.com
+    role: roles/compute.admin
+  - members:
+    - serviceAccount:service-701417641712@compute-system.iam.gserviceaccount.com
+    role: roles/compute.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-gkenode.iam.gserviceaccount.com
+    role: roles/container.nodeServiceAgent
+  - members:
+    - serviceAccount:service-701417641712@container-engine-robot.iam.gserviceaccount.com
+    role: roles/container.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@dataflow-service-producer-prod.iam.gserviceaccount.com
+    role: roles/dataflow.serviceAgent
+  - members:
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    role: roles/datafusion.runner
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-datafusion.iam.gserviceaccount.com
+    role: roles/datafusion.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-datalabeling.iam.gserviceaccount.com
+    role: roles/datalabeling.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-datamigration.iam.gserviceaccount.com
+    role: roles/datamigration.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@trifacta-gcloud-prod.iam.gserviceaccount.com
+    role: roles/dataprep.serviceAgent
+  - members:
+    - serviceAccount:cloud-datafusion-management-sa@n92826e5a5cc85ba6-tp.iam.gserviceaccount.com
+    role: roles/dataproc.admin
+  - members:
+    - serviceAccount:service-701417641712@dataproc-accounts.iam.gserviceaccount.com
+    role: roles/dataproc.serviceAgent
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    role: roles/datastore.user
+  - members:
+    - serviceAccount:service-701417641712@dlp-api.iam.gserviceaccount.com
+    role: roles/dlp.serviceAgent
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    role: roles/dlp.user
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-prod-dai-core.iam.gserviceaccount.com
+    role: roles/documentaicore.serviceAgent
+  - members:
+    - serviceAccount:701417641712-compute@developer.gserviceaccount.com
+    - serviceAccount:701417641712@cloudservices.gserviceaccount.com
+    - serviceAccount:anand-bq-test-2@appspot.gserviceaccount.com
+    - serviceAccount:service-701417641712@containerregistry.iam.gserviceaccount.com
+    - serviceAccount:service-701417641712@dataflow-service-producer-prod.iam.gserviceaccount.com
+    - user:aaronwilkowitz@google.com
+    - user:abdullateef@google.com
+    - user:anandjain@google.com
+    - user:jayjk@google.com
+    - user:jjaladi@google.com
+    - user:knimmagadda@googlecloud.corp-partner.google.com
+    - user:lukemc@google.com
+    - user:pramodrao@google.com
+    - user:preethiigoor@google.com
+    - user:skluger@google.com
+    role: roles/editor
+  - members:
+    - serviceAccount:service-701417641712@firebase-rules.iam.gserviceaccount.com
+    role: roles/firebaserules.system
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-firestore.iam.gserviceaccount.com
+    role: roles/firestore.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-gkehub.iam.gserviceaccount.com
+    role: roles/gkehub.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-healthcare.iam.gserviceaccount.com
+    role: roles/healthcare.serviceAgent
+  - members:
+    - user:anandjain@google.com
+    - user:meganzhao@google.com
+    role: roles/logging.configWriter
+  - members:
+    - serviceAccount:service-701417641712@cloud-ml.google.com.iam.gserviceaccount.com
+    role: roles/ml.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-monitoring-notification.iam.gserviceaccount.com
+    role: roles/monitoring.notificationServiceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-mcmetering.iam.gserviceaccount.com
+    role: roles/multiclustermetering.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-networkmanagement.iam.gserviceaccount.com
+    role: roles/networkmanagement.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-notebooks.iam.gserviceaccount.com
+    role: roles/notebooks.serviceAgent
+  - members:
+    - user:anandjain@google.com
+    - user:lukemc@google.com
+    - user:meganzhao@google.com
+    role: roles/owner
+  - members:
+    - serviceAccount:gmail-api-push@system.gserviceaccount.com
+    - serviceAccount:o739076213843-322730@gcp-sa-logging.iam.gserviceaccount.com
+    - serviceAccount:service-701417641712@gcp-sa-monitoring-notification.iam.gserviceaccount.com
+    role: roles/pubsub.publisher
+  - members:
+    - user:jain.12@gmail.com
+    role: roles/pubsub.viewer
+  - members:
+    - serviceAccount:service-701417641712@cloud-redis.iam.gserviceaccount.com
+    role: roles/redis.serviceAgent
+  - members:
+    - user:anandjain@google.com
+    role: roles/resourcemanager.organizationAdmin
+  - members:
+    - user:anandjain@google.com
+    role: roles/resourcemanager.projectIamAdmin
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-retail.iam.gserviceaccount.com
+    role: roles/retail.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@serverless-robot-prod.iam.gserviceaccount.com
+    role: roles/run.serviceAgent
+  - members:
+    - serviceAccount:anand-bq-test-2@appspot.gserviceaccount.com
+    role: roles/secretmanager.secretAccessor
+  - members:
+    - serviceAccount:service-701417641712@service-networking.iam.gserviceaccount.com
+    role: roles/servicenetworking.serviceAgent
+  - members:
+    - serviceAccount:service-701417641712@sourcerepo-service-accounts.iam.gserviceaccount.com
+    role: roles/sourcerepo.serviceAgent
+  - members:
+    - serviceAccount:spanner-admin-accessor@anand-bq-test-2.iam.gserviceaccount.com
+    role: roles/spanner.admin
+  - members:
+    - serviceAccount:anand-bq-test-2-2@anand-bq-test-2.iam.gserviceaccount.com
+    - serviceAccount:cloud-datafusion-management-sa@n92826e5a5cc85ba6-tp.iam.gserviceaccount.com
+    role: roles/storage.admin
+  - members:
+    - serviceAccount:service-701417641712@gcp-sa-visualinspection.iam.gserviceaccount.com
+    role: roles/visualinspection.serviceAgent
+  
+project: projects/701417641712
+resource: //cloudresourcemanager.googleapis.com/projects/anand-bq-test-2
