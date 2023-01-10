@@ -1384,6 +1384,9 @@ policy:
   - members:
     - serviceAccount:service-701417641712@gcp-sa-visualinspection.iam.gserviceaccount.com
     role: roles/visualinspection.serviceAgent
+  - members:
+    - serviceAccount:service-701417641873@gcp-sa-visualinspection.iam.gserviceaccount.com
+    role: roles/visualinspection.serviceAgent
   
 project: projects/701417641712
 resource: //cloudresourcemanager.googleapis.com/projects/anand-bq-test-2
