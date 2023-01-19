@@ -11,8 +11,7 @@ gcloud asset search-all-iam-policies --scope=projects/$1
 
 ```
 
-You could use Google Cloud Shell for this or any other location if you need to 
-do this in a regular basis.
+You could use [Google Cloud Shell](https://cloud.google.com/shell) or any other location if you need to do this in a regular basis.
 
 Also, you need to provide the authentication and authorization for this command
 to be run (either using service account or your own user account).
