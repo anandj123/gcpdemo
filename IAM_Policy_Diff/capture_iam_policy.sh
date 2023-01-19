@@ -16,7 +16,7 @@ if [ $end_char != "/" ]
 then
     gcs_location=$gcs_location"/"
 fi
-gcs_location=$gcs_location`date +"%Y-%m-%d-%T"`
+gcs_location=$gcs_location$1-`date +"%Y-%m-%d-%T"`
 echo $gcs_location
 
 gcloud asset search-all-iam-policies --scope=projects/$1 > temp.out
